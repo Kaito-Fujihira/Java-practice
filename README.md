@@ -1,3 +1,3 @@
-# Java-practice
+# Javaの練習用ディレクトリ
 
-- Javaの練習用ディレクトリ
+- Progateを使ってJavaを練習しています。復習も兼ねて。
