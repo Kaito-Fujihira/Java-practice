@@ -13,5 +13,9 @@ class Main {
     int distance = scanner.nextInt();
     bicycle.run(distance);
 
+    System.out.println("==============")
+    System.out.println("【車の情報】");
+    car.printData();
+
   }
 }
