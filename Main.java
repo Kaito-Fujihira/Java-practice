@@ -26,5 +26,15 @@ class Main {
     System.out.print("給油する量を入力してください : ");
     int fuel = scanner.nextInt();
     car.charge(fuel);
+
+
+
+    //Person.java用
+    Person person1 = new Person("Kate", "Jones", 27, 1.6, 50.0);
+    person1.printData();
+    Person person2 = new Person("John", "Christopher", "Smith", 65, 1.75, 80.0);
+    person2.printData();
+    System.out.println("----------------------");
+    person1.printData();
   }
 }
