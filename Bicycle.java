@@ -1,11 +1,6 @@
-class Bicycle {
-  private String name;
-  private String color;
-  private int distance = 0;
-
+class Bicycle extends Vehicle {
   Bicycle(String name, String color) {
-    this.name = name;
-    this.color = color;
+    super(name, color);
   }
 
   public void printData() {
