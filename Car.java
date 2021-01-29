@@ -1,11 +1,8 @@
 class Car {
-  private String name;
-  private String color;
-  private int distance = 0;
+  private int fuel = 50;
 
   Car(String name, String color) {
-    this.name = name;
-    this.color = color;
+    super(name, color);
   }
 
   public void printData() {
