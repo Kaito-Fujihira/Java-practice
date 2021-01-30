@@ -5,10 +5,13 @@ class Car {
     super(name, color);
   }
 
+  public int getFuel() {
+    return this.fuel;
+  }
+
   public void printData() {
-    System.out.println("名前 : " + this.name)
-    System.out.println("色 : " + this.color);
-    System.out.println("走行距離 : " + this.distance + "km");
+    super.printData();
+    System.out.println("ガソリン量：" + this.fuel + "L");
   }
 
   public void run(int distance) {
@@ -25,16 +28,16 @@ class Car {
     }
   }
   
-  public void charge(int fuel) {
-    System.out.println(fuel + "L給油します");
-    if(fuel <= 0) {
+  public void charge(int litre) {
+    System.out.println(litre + "L給油します");
+    if(litre <= 0) {
       System.out.println("給油できません");
       System.out.println("ガソリン量 : " + this.fuel + "L");
-    }else if(fuel + this.fuel >= 100){
+    }else if(litre + this.fuel >= 100){
       System.out.println("満タンまで給油します");
       System.out.println("ガソリン量 : " + "100L");
     }else{
-      this.fuel += fuel;
+      this.fuel += litre;
       System.out.println("ガソリン量 : " + this.fuel +"L");
     }
   }
