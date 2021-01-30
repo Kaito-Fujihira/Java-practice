@@ -1,7 +1,7 @@
-class Vehicle {
+abstract class Vehicle { // abstractでVehicleクラスを抽象クラスに変更した
   private String name;
   private String color;
-  private int distance = 0;
+  protected int distance = 0;　// protectedを用いると、クラス内とサブクラスからのみアクセスを許すフィールドを作ることができる
 
   public String getName() {
     return this.name;
@@ -23,4 +23,6 @@ class Vehicle {
     System.out.println("色：" + this.color);
     System.out.println("走行距離：" + this.distance + "km");
   }
+
+  abstract public void run(int distance); // abstractで抽象メソッドというメソッドを定義する
 }
