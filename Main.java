@@ -2,12 +2,20 @@ import java.util.scanner;
 
 class Main {
   public static void main (String[] args) {
+    Car car = new Car("フェラーリ", "赤");
+    car.setOwner(person1);
+
     Bicycle bicycle = new Bicycle("ビアンキ", "緑");
+    bicycle.setOwner(person2);
 
     Scanner scanner = new Scammer(System.in);
 
     System.out.println("【自転車の情報】");
     bicycle.printData();
+    System.out.println("-----------------");
+    System.out.println("【自転車の所有者の情報】");
+    bicycle.getOwner();
+    Bicycle.getOwner().printData();
     System.out.println("-----------------");
     System.out.print("走る距離を入力してください : ");
     int distance = scanner.nextInt();
@@ -17,6 +25,10 @@ class Main {
     System.out.println("【車の情報】");
     car.printData();
 
+    System.out.println("--------------");
+    System.out.println("【車の所有者の情報】");
+    Car.getOwner();
+    car.getOwner().printData();
     System.out.println("--------------");
     System.out.print("走る距離を入力してください : ");
     int distances = scanner.nextInt();
