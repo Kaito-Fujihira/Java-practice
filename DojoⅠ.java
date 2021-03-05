@@ -8,6 +8,14 @@ class Main {
     String firstName = scanner.next();
     System.out.print("名字：");
     String lastName = scanner.next();
+    System.out.print("年齢：");
+    int age = scanner.netInt();
     System.out.println("名前は" + firstName + " " + lastName "です");
+    System.out.println("年齢は" + age + "歳です");
+    if (age >= 20) {
+      System.out.println("成年者です");
+    }else{
+      System.out.println("未成年者です");
+    }
   }
 }
