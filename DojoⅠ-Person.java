@@ -9,7 +9,12 @@ class Person {
     }
     System.out.println("身長は" + height + "mです");
     System.out.println("体重は" + weight + "kgです");
-    System.out.println("BMIは" + Math.round(bmi(height, weight)))
+    System.out.println("BMIは" + Math.round(bmi(height, weight)) + "です");
+    if (isHealthy(bmi)) {
+      System.out.println("健康です");
+    }else{
+      System.out.println("健康ではありません");
+    }
   }
 
   public static String fullName(String firstName, String lastName) {
@@ -18,5 +23,9 @@ class Person {
 
   public static double bmi(double weight, double height) {
     return weight / height / height;
+  }
+
+  public static double isHealthy(double bmi) {
+    return bmi >= 18.5 && bmi < 25.0;
   }
 }
